@@ -1,0 +1,42 @@
+.view {
+  position: relative;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: url('https://wallpaperaccess.com/full/3968211.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.view::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
+  z-index: 0; /* Lowered z-index to allow AppBar to be above */
+}
+
+.movies {
+  position: relative;
+  z-index: 2; /* Ensure movies are above the overlay */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.movie {
+  margin: 10px;
+  width: 300px;
+}
+
+.app-bar {
+  position: relative;
+  z-index: 3; /* Ensure AppBar is above the overlay */
+}
+
+.toolbar {
+  z-index: 3; /* Ensure Toolbar content is above the overlay */
+}

@@ -1,0 +1,26 @@
+p{
+    color: blueviolet
+}
+a
+{text-decoration: none;}
+table,th,td{
+    border: 1px solid black;
+    flood-color: aqua;
+}
+th{
+    color:lightcoral
+}
+img{
+    border: 5px solid #ddd;
+    border-radius: 4px;
+    border-color: rgb(39, 5, 5);     
+}
+
+#id1{
+    background-color: cornsilk;
+    font-family: fantasy;
+}
+
+img{
+    border-radius: 25px
+}
